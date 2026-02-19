@@ -5,7 +5,7 @@ A browser-based HTML/JavaScript application hosted on SharePoint for converting 
 ## Quick Start
 
 1. **Push this repo to GitHub** → Enable GitHub Pages on `/docs` folder
-2. **Get your URL**: `https://yourusername.github.io/repo-name/app.html`
+2. **Get your URL**: `https://yourusername.github.io/repo-name/`
 3. **Embed in SharePoint** using iframe (see [Deployment](#deployment) for details)
 
 ## Overview
@@ -55,7 +55,7 @@ SharePoint's Embed web part blocks inline `<script>` tags for security. By hosti
    - Under "Source", select: `main` branch
    - Under "Folder", select: `/docs`
    - Click "Save"
-   - GitHub will provide your URL: `https://yourusername.github.io/your-repo-name/app.html`
+   - GitHub will provide your URL: `https://yourusername.github.io/your-repo-name/`
 
 3. **Wait for deployment** (usually 1-2 minutes)
    - Visit your GitHub Pages URL to verify the app loads
@@ -68,7 +68,7 @@ SharePoint's Embed web part blocks inline `<script>` tags for security. By hosti
 4. Search for and select "Embed" web part
 5. In the "Website address or embed code" field, paste:
    ```html
-   <iframe src="https://yourusername.github.io/your-repo-name/app.html"
+   <iframe src="https://yourusername.github.io/your-repo-name/"
            width="100%"
            height="800"
            style="border: none;">
@@ -81,11 +81,11 @@ SharePoint's Embed web part blocks inline `<script>` tags for security. By hosti
 
 ### Step 3: Updating the App
 
-When you make changes to `docs/app.html`:
+When you make changes to `docs/index.html`:
 
 1. **Commit and push changes**
    ```bash
-   git add docs/app.html
+   git add docs/index.html
    git commit -m "Update app"
    git push
    ```
@@ -98,7 +98,7 @@ When you make changes to `docs/app.html`:
 
 ### Alternative: Local Testing
 
-Simply open `docs/app.html` directly in any modern web browser. No server required for local development and testing.
+Simply open `docs/index.html` directly in any modern web browser. No server required for local development and testing.
 
 ## Usage
 
@@ -159,7 +159,7 @@ Generated Markdown includes:
 ```
 CsvConverter/
 ├── docs/
-│   └── app.html              # Production app (served by GitHub Pages)
+│   └── index.html              # Production app (served by GitHub Pages)
 ├── README.md                 # This file
 ├── package.json              # TypeScript development dependencies
 └── tsconfig.json             # TypeScript configuration
@@ -193,7 +193,7 @@ Test with `sample_survey.csv` (simple) and `TurboTax_sample.csv` (complex). Veri
 
 ## Customization
 
-Edit `docs/app.html` to customize:
+Edit `docs/index.html` to customize:
 1. Question detection patterns (regex)
 2. Header label expectations
 3. Response category recognition
