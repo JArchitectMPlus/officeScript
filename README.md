@@ -1,4 +1,4 @@
-# SharePoint Client-Side App: CSV to Markdown Converter
+# CSV to Markdown Converter
 
 A browser-based HTML/JavaScript application hosted on SharePoint for converting CSV data to Markdown format without size limitations.
 
